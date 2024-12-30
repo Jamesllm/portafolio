@@ -203,6 +203,18 @@ const proyects: Proyect[] = [
   //   image_cover: falconix_cover.src,
   // },
   {
+    title: "Gestion Biblioteca",
+    proyect_logo: "",
+    company_name: "",
+    description:
+      "Programa creado con el fin de gestionar libros de una biblioteca, empleando tecnologias como Java Swing y SQLSERVER para el manejo de datos",
+    tecnologies: ["Java", "Java Swing", "SQLServer", "SSMS"],
+    characteristics: [
+      "Los administradores pueden gestionar datos como usuarios, categorías e idiomas.",
+    ],
+    image_cover: "",
+  },
+  {
     title: "ContentFlow App",
     proyect_logo: contentflow_logo.src,
     company_name: "",
@@ -346,7 +358,11 @@ const proyects: Proyect[] = [
               }
 
               <div class="flex justify-center pb-10 mt-4">
-                <img src={proyect.image_cover} alt={proyect.title.trim().toLowerCase()} />
+                {
+                  proyect.image_cover && (
+                    <img src={proyect.image_cover} alt={proyect.title.trim().toLowerCase()} />
+                  )
+                }
               </div>
             </div>
           </div>
