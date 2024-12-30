@@ -1,11 +1,363 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import type { Experience } from "../interfaces/Experience.ts";
+import type { Proyect } from "../interfaces/Proyect.ts";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Container from "../components/Container.astro";
+import HeaderTitle from "../components/page/HeaderTitle.astro";
+import Timeline from "../components/Timeline.jsx";
+import Hello from "../components/Hello.astro";
+import Layout from "../layouts/Layout.astro";
+
+// experiences
+import fed_logo from "../assets/fed_logo.png";
+import testcontrol_logo from "../assets/logos/testcontrol_logo.png";
+import tumerka_logo from "../assets/logos/tumerka_logo.png";
+import datahub_logo from "../assets/logos/datahub_logo.webp";
+import marvin_logo from "../assets/logos/marvin_logo.png";
+import drago_logo from "../assets/logos/drago_logo.png";
+
+const experiences: Experience[] = [
+  {
+    title: "Phuyu Consulting - ChatBot",
+    period: "Diciembre 2024 - Actual",
+    company: "",
+    proyect_logo: "",
+    description: "",
+    points: [
+      "Desarrollé una API utilizando Flask para gestionar y almacenar información en una base de datos MongoDB.",
+      "Implementé una búsqueda vectorial optimizar la consulta y recuperación de datos en la base de conocimiento del chatbot.",
+    ],
+  },
+  {
+    title: "Sitio web - Datahub by Drago",
+    period: "Septiembre 2024 - Octubre 2024",
+    company: "Corporación Grupo Drago S.A.C",
+    proyect_logo: datahub_logo.src,
+    description: "",
+    points: [
+      "Desarrollé componentes personalizados en Vue.js, aportando al diseño y funcionalidad del sitio web.",
+      "Optimicé la responsividad del sitio web, asegurando una experiencia de usuario fluida.",
+    ],
+  },
+  {
+    title: "Marvin AI",
+    period: "Agosto 2024 - Septiembre 2024",
+    company: "Corporación Grupo Drago S.A.C",
+    proyect_logo: marvin_logo.src,
+    description:
+      "Participé en la creación de Marvin, una inteligencia artificial diseñada para responder preguntas frecuentes y realizar consultas de productos, mejorando significativamente la experiencia e interacción con los clientes.",
+    points: [
+      "Integración de modelos de GPT como GPT-3.5 Turbo para ofrecer respuestas precisas y contextuales.",
+      "Uso de ChromaDB para almacenar datos no estructurados y PostgreSQL para datos relacionales, optimizando el rendimiento y la escalabilidad.",
+      "Implementación de un servidor utilizando Flask, asegurando una comunicación rápida y segura entre el cliente y la IA.",
+    ],
+  },
+  {
+    title: "Sitio web - TuMerka",
+    period: "Julio 2024 - Agosto 2024",
+    company: "Corporación Grupo Drago S.A.C",
+    proyect_logo: tumerka_logo.src,
+    description: "",
+    points: [
+      "Implementé el módulo de suscripción en la página web, optimizando la experiencia del usuario.",
+      "Aporte en la funcionalidad de una API Rest utilizando Node.js, Express y PostgreSQL para integrar las funcionalidades del sistema.",
+      "Colaboré en la creación de un chatbot basado en un modelo de ChatGPT, utilizado para responder preguntas frecuentes y realizar búsquedas de productos.",
+      "Mejora de UI, optimizar y garantizar que el diseño sea responsive.",
+    ],
+  },
+  // {
+  //   title: "Falconix Docs",
+  //   period: "",
+  //   company: "Corporación Grupo Drago S.A.C",
+  //   description:
+  //     "Documentación del sistema Falconix, una solución diseñada para la automatización y monitoreo de tareas repetitivas en entornos empresariales. El proyecto utilizó Nuxt Docs para estructurar y presentar la información de forma clara y accesible.",
+  //   points: [
+  //     "Diseñé y planifiqué la estructura del sitio web para maximizar la usabilidad y navegabilidad.",
+  //     "Implementé un proyecto integral utilizando Nuxt Docs, asegurando una presentación intuitiva de la documentación.",
+  //     "Creé una guía de uso detallada para los distintos endpoints disponibles en la API, facilitando la integración por parte de los desarrolladores.",
+  //     "Utilicé tecnologías como Markdown para la creación de contenidos dinámicos y Tailwind CSS para lograr un diseño visual atractivo y consistente.",
+  //   ],
+  // },
+  {
+    title: "FED (Facturacion Electronica Drago) Docs",
+    period: "",
+    company: "Corporación Grupo Drago S.A.C",
+    proyect_logo: fed_logo.src,
+    description:
+      "Documentación del servicio de facturación electrónica de la empresa Drago. Este proyecto empleó Nuxt Docs para desarrollar un sitio web moderno, interactivo y funcional.",
+    points: [
+      "Utilicé Nuxt Docs para desarrollar un sitio web moderno, interactivo y funcional.",
+      "Diseñé la arquitectura del sitio para garantizar una navegación intuitiva y accesible.",
+      "Elaboré guías exhaustivas para el uso de la API, detallando los diferentes endpoints disponibles para facilitar su implementación en otros sistemas.",
+    ],
+  },
+  {
+    title: "FED (Facturacion Electronica Drago)",
+    period: "Julio 2024 - Agosto 2024",
+    company: "Corporación Grupo Drago S.A.C",
+    proyect_logo: fed_logo.src,
+    description:
+      "Documentación e implementación del servicio de facturación electrónica de la empresa Drago. Este proyecto se desarrolló usando Python, adaptando las funcionalidades implementadas previamente en el API Drago Facturador V1.",
+    points: [
+      "Implementé consultas a la SUNAT mediante el número de identificación como DNI, RUC, pasaporte y carnet de extranjería.",
+      "Realicé el envío de XML a la SUNAT de tipo: boleta, factura, nota de crédito y nota de débito.",
+      "Desarrollo de una API para la integración con los servicios de la SUNAT utilizando Python como lenguaje principal.",
+    ],
+  },
+  {
+    title: "API Drago Facturador V1",
+    period: "Diciembre 2023 - Mayo 2024",
+    company: "Corporación Grupo Drago S.A.C",
+    proyect_logo: "",
+    description:
+      "Desarrollo e implementación de un servicio de facturación electrónica para la empresa Drago, diseñado como una API centralizada para ser consumida por otros servicios internos de la organización.",
+    points: [
+      "El proyecto se desarrolló utilizando PHP y Composer, asegurando una arquitectura escalable y eficiente.",
+      "Permitió la emisión de comprobantes electrónicos, incluyendo boletas, facturas, notas de crédito y notas de débito, cumpliendo con los estándares de la SUNAT.",
+      "Integración de consultas a la SUNAT mediante identificaciones como DNI, RUC, pasaporte y carnet de extranjería.",
+      "Creación de una solución flexible para optimizar el proceso de facturación en los diversos servicios de la empresa.",
+    ],
+  },
+  {
+    title: "Drago Intranet",
+    period: "Octubre 2023 - Nov 2023",
+    company: "Corporación Grupo Drago S.A.C",
+    proyect_logo: "",
+    description: "",
+    points: [
+      "Diseño y planificación de la estructura del sitio web.",
+      "Implementación de un nuevo proyecto utilizando Nuxt3.",
+      "Configuración y optimización de Vue.js dentro del entorno Nuxt3.",
+      "Mejora de la experiencia de usuario mediante la creación de componentes esenciales en Vue.js,  promoviendo una mayor coherencia visual y una interacción fluida en todas las secciones del sitio.",
+      "Colaboración en la elaboración de la API REST para el sistema, empleando tecnologías como  Node.js y Express.",
+    ],
+  },
+  {
+    title: "Test&Control",
+    period: "Julio 2023 - Septiembre 2023",
+    company: "Corporación Grupo Drago S.A.C",
+    proyect_logo: testcontrol_logo.src,
+    description: "",
+    points: [
+      "Diseño de la estructura base del sitio web (header, main, footer).",
+      "Creación de un nuevo proyecto utilizando Nuxt3.",
+      "Creación de componentes Vue básicos para diferentes secciones del sitio.",
+      "Implementación de rutas con Nuxt3 para la navegación.",
+    ],
+  },
+  {
+    title: "Sitio web - Drago",
+    period: "Diciembre 2021 - Abril 2022",
+    company: "Corporación Grupo Drago S.A.C",
+    proyect_logo: drago_logo.src,
+    description: "",
+    points: [
+      "Aporte con la elaboracion de la estructura de la API REST para el sistema, empleando Node.js y Express",
+      "Garantize que el diseño sea responsive.",
+      "Implementé el módulo de busqueda, asegurandome que el diseño sea responsive y funcional.",
+    ],
+  },
+];
+
+// proyects
+import fed_cover from "../assets/fed_cover.png";
+import falconix_cover from "../assets/falconix_cover.png";
+import falconix_logo from "../assets/falconix_logo.png";
+import animeos_cover from "../assets/animeos_cover.png";
+import animeos_logo from "../assets/animeos_logo.png";
+
+import contentflow_cover from "../assets/contentflow_cover.jpg";
+import contentflow_logo from "../assets/contentflow_logo.png";
+import pandadocs_cover from "../assets/pandadocs_cover.png";
+import dragoasis_cover from "../assets/dragoasis_cover.jpg"
+import barbercan_cover from "../assets/barbercan_cover.jpg"
+import barbercan_logo from "../assets/barbercan_logo.png"
+
+const proyects: Proyect[] = [
+  // {
+  //   title: "FED (Facturacion Electronica Drago) Docs",
+  //   proyect_logo: fed_logo.src,
+  //   company_name: "Corporación Grupo Drago S.A.C",
+  //   description:
+  //     "Documentación del servicio de facturación electrónica de la empresa Drago, desarrollado utilizando Nuxt Docs para la creación de un sitio web moderno, interactivo y funcional.",
+  //   tecnologies: ["Nuxt3 y NuxtDocs", "TailwindCSS"],
+  //   characteristics: [
+  //     "Diseño intuitivo que facilita la navegación y comprensión del contenido.",
+  //     "Organización estructurada de la documentación técnica para desarrolladores e implementadores.",
+  //     "Incluye guías sobre el uso de la API para consulta de información a la SUNAT y el manejo de XML para la emisión de comprobantes electrónicos (boletas, facturas, notas de crédito y débito).",
+  //   ],
+  //   image_cover: fed_cover.src,
+  // },
+  // {
+  //   title: "Falconix Docs",
+  //   proyect_logo: falconix_logo.src,
+  //   company_name: "Corporación Grupo Drago S.A.C",
+  //   description:
+  //     "Documentación del sistema Falconix, una solución diseñada para la automatización y monitoreo de tareas repetitivas en entornos empresariales, desarrollado utilizando Nuxt Docs para presentar la información de forma clara y estructurada.",
+  //   tecnologies: ["Nuxt3 y NuxtDocs", "TailwindCSS"],
+  //   characteristics: [
+  //     "Automatización de tareas: Programa y configura tareas repetitivas con formato cron, incluyendo el envío de correos electrónicos con parámetros previamente establecidos.",
+  //     "Registro de ejecuciones: Visualización y almacenamiento detallado de las ejecuciones, destacando errores y éxitos para facilitar el análisis y solución de problemas.",
+  //     "Inicio de sesión: Acceso restringido para mayor seguridad, integrando una interfaz de usuario simplificada.",
+  //   ],
+  //   image_cover: falconix_cover.src,
+  // },
+  {
+    title: "ContentFlow App",
+    proyect_logo: contentflow_logo.src,
+    company_name: "",
+    description:
+      "ContentFlow es una aplicación desarrollada en Java Swing que permite a los usuarios interactuar con contenidos dinámicos de manera eficiente. Este proyecto está diseñado para gestionar contenidos multimedia (libros, música, películas), con características como agregar favoritos, administrar usuarios y categorías, y generar reportes en forma de grafico de barras.",
+    tecnologies: ["Java", "Java Swing", "SQLServer", "SSMS"],
+    characteristics: [
+      "Subida y gestión de contenido: Los usuarios pueden agregar contenido personalizado y administrarlo de manera eficiente.",
+      "Favoritos y vistas: Posibilidad de agregar contenido a favoritos y llevar un historial de contenido visto.",
+      "Administración avanzada: Los administradores pueden gestionar datos como usuarios, categorías e idiomas.",
+    ],
+    image_cover: contentflow_cover.src,
+  },
+  {
+    title: "AnimeOs",
+    proyect_logo: animeos_logo.src,
+    company_name: "",
+    description:
+      "AnimeOs es una página web desarrollada con React.js que recopila información detallada de animes y películas, brindando a los usuarios acceso a un amplio catálogo organizado y fácil de explorar.",
+    tecnologies: ["Reactjs", "sass"],
+    characteristics: [],
+    image_cover: animeos_cover.src,
+  },
+
+  {
+    title: "PandaTools Libreria",
+    proyect_logo: "",
+    company_name: "",
+    description:
+      "PandaTools es un proyecto diseñado para mejorar la experiencia de usuario en la terminal, proporcionando la capacidad de mostrar colores y formatos personalizados. Permite imprimir matrices con estilos configurables, aceptando una amplia variedad de parámetros para personalizar la presentación, incluyendo colores, estilos de texto y bordes.",
+    tecnologies: ["Java"],
+    characteristics: [
+      "Contiene 3 modulos (Term, Panda, Database), modulos que facilitan la muestra de datos en la terminal asi como tambien la conexion a diferentes base de datos SQL",
+    ],
+    image_cover: pandadocs_cover.src,
+  },
+  {
+    title: "Barber Can",
+    proyect_logo: barbercan_logo.src,
+    company_name: "",
+    description:
+      "La propuesta presentada tiene como objetivo ofrecer a los usuarios una interfaz intuitiva, diseñada para facilitar la creación de identificaciones para sus mascotas de manera sencilla. Esta herramienta generará un archivo PDF imprimible que podrá utilizarse posteriormente. ",
+    tecnologies: ["PHP", "CSS", "JS", "HTML5"],
+    characteristics: [],
+    image_cover: barbercan_cover.src,
+  },
+  {
+    title: "Drago Assistance",
+    proyect_logo: "",
+    company_name: "",
+    description:
+      "Propuesta de solución a un problema de la empresa Drago, desarrollado con el objetivo de aplicar los conceptos aprendidos en el desarrollo web moderno.",
+    tecnologies: ["ReactJS", "Node.js", "PostgreSQL"],
+    characteristics: [],
+    image_cover: dragoasis_cover.src,
+  },
+];
 ---
 
 <Layout>
-	<Welcome />
+  <Container>
+    <Hello name="Ronal James Llapapasca Montes" charge="Junior Developer" />
+    <div class="my-12 md:my-28">
+      <HeaderTitle highlightType="red" text="Sobre Mi" />
+      <div class="font-normal my-12 text-medium md:text-lg lg:text-xl">
+        <p>¡Hola 👋, mi nombre es Ronal!</p>
+        <p>
+          Soy estudiante de Ingeniería de Sistemas e Informática con experiencia
+          en desarrollo web, APIs y servicios basados en inteligencia
+          artificial. Mi trayectoria incluye trabajos en proyectos complejos que
+          abarcan desde diseño y desarrollo hasta la documentación técnica,
+          aplicando tecnologías como Nuxt3, Vue.js, Python, Node.js y PHP.
+        </p>
+        <p class="mt-5"><strong>💼 Experiencia Profesional</strong></p>
+        <ul class="list-disc ml-10 space-y-5">
+          <li>
+            Trabajo como Junior Developer en Corporación Grupo Drago S.A.C,
+            participando en múltiples proyectos que han fortalecido mis
+            habilidades en desarrollo web, APIs y soluciones empresariales
+            innovadoras.
+          </li>
+          <li>
+            Fui miembro del Developer Team 2023 de la UTP 🚀, contribuyendo al
+            proyecto DevTeam Markdown Web y demostrando capacidad para trabajar
+            en equipo y crear soluciones eficientes.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <HeaderTitle highlightType="green" text="Experiencia Laboral" />
+    <Timeline experiences={experiences} client:only="astro" />
+
+    <div class="my-12">
+      <HeaderTitle highlightType="yellow" text="Proyectos" />
+    </div>
+
+    <section class="mt-10">
+      {
+        proyects.map((proyect) => (
+          <div class="grid grid-cols-5 grid-rows-5 gap-4 mb-16 border-b-2">
+            <div class="col-span-7 row-span-7 lg:col-span-2 lg:row-span-5">
+              <div class="space-y-4 sticky top-16 left-0">
+                <h3 class="text-xl lg:text-2xl font-bold">{proyect.title}</h3>
+                {proyect.company_name && (
+                  <p class="text-medium md:text-lg border-2 border-gray-950 rounded-full px-4 py-1 w-fit">
+                    {proyect.company_name}
+                  </p>
+                )}
+                <div class="my-5">
+                  {
+                    proyect.proyect_logo && (
+                      <img class="w-20 md:w-24 object-contain" src={proyect.proyect_logo} alt={proyect.title.trim().toLowerCase()} />
+                    )
+                  }
+                </div>
+                <p class="font-bold my-5 text-medium md:text-lg mt-10 text-[#FBB130]">
+                  Tecnologias empleadas:
+                </p>
+                <ul class="mt-2 list-disc list-inside text-medium md:text-lg">
+                  {proyect.tecnologies.map((tecn, i) => (
+                    <li>{tecn}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-span-7 row-span-7 lg:col-span-3 lg:row-span-5 lg:col-start-3 text-medium md:text-lg">
+              <p>{proyect.description}</p>
+
+
+                {
+                proyect.characteristics.length > 0 && (
+                <p class="font-bold my-5">Caracteristicas:</p>
+                <ul class="mt-2 list-disc list-inside">
+                  {proyect.characteristics.map((cart, i) => (
+                    <li>{cart}</li>
+                  ))}
+                </ul>
+                )
+              }
+
+              <div class="flex justify-center pb-10 mt-4">
+                <img src={proyect.image_cover} alt={proyect.title.trim().toLowerCase()} />
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </section>
+  </Container>
 </Layout>
+
+<style>
+  p {
+    margin-bottom: 10px;
+  }
+</style>

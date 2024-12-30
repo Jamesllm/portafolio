@@ -1,0 +1,102 @@
+---
+import Container from "../components/Container.astro";
+import HeaderTitle from "../components/page/HeaderTitle.astro";
+import Layout from "../layouts/Layout.astro";
+
+interface Proyect {
+  title: string;
+  proyect_logo: string;
+  company_name: string;
+  description: string;
+  tecnologies: string[];
+  caracteriticas: string[];
+  image_cover: string;
+}
+
+import fed_cover from "../assets/fed_cover.png";
+import fed_logo from "../assets/fed_logo.png";
+import falconix_cover from "../assets/falconix_cover.png";
+import falconix_logo from "../assets/falconix_logo.png";
+import animeos_cover from "../assets/animeos_cover.png";
+import animeos_logo from "../assets/animeos_logo.png";
+
+const proyects: Proyect[] = [
+  {
+    title: "FED (Facturacion Electronica Drago) Docs",
+    proyect_logo: fed_logo.src,
+    company_name: "Corporación Grupo Drago S.A.C",
+    description:
+      "Documentación del servicio de facturación electrónica de la empresa Drago, desarrollado utilizando Nuxt Docs para la creación de un sitio web moderno, interactivo y funcional.",
+    tecnologies: ["Nuxt3 y NuxtDocs", "TailwindCSS"],
+    caracteriticas: [
+      "Diseño intuitivo que facilita la navegación y comprensión del contenido.",
+      "Organización estructurada de la documentación técnica para desarrolladores e implementadores.",
+      "Incluye guías sobre el uso de la API para consulta de información a la SUNAT y el manejo de XML para la emisión de comprobantes electrónicos (boletas, facturas, notas de crédito y débito).",
+    ],
+    image_cover: fed_cover.src,
+  },
+  {
+    title: "Falconix Docs",
+    proyect_logo: falconix_logo.src,
+    company_name: "Corporación Grupo Drago S.A.C",
+    description:
+      "Documentación del sistema Falconix, una solución diseñada para la automatización y monitoreo de tareas repetitivas en entornos empresariales, desarrollado utilizando Nuxt Docs para presentar la información de forma clara y estructurada.",
+    tecnologies: ["Nuxt3 y NuxtDocs", "TailwindCSS"],
+    caracteriticas: [
+      "Automatización de tareas: Programa y configura tareas repetitivas con formato cron, incluyendo el envío de correos electrónicos con parámetros previamente establecidos.",
+      "Registro de ejecuciones: Visualización y almacenamiento detallado de las ejecuciones, destacando errores y éxitos para facilitar el análisis y solución de problemas.",
+      "Inicio de sesión: Acceso restringido para mayor seguridad, integrando una interfaz de usuario simplificada.",
+    ],
+    image_cover: falconix_cover.src,
+  },
+  {
+    title: "AnimeOs",
+    proyect_logo: animeos_logo.src,
+    company_name: "",
+    description:
+      "AnimeOs es una página web desarrollada con React.js que recopila información detallada de animes y películas, brindando a los usuarios acceso a un amplio catálogo organizado y fácil de explorar.",
+    tecnologies: ["Reactjs", "sass"],
+    caracteriticas: [],
+    image_cover: animeos_cover.src,
+  },
+];
+---
+
+<Layout>
+  <Container>
+    <div class="text-sm md:text-lg lg:text-xl text-center">
+      <div class="flex gap-5 mb-12 justify-center">
+        <h2 class="text-5xl font-bold">Proyectos de</h2>
+        <HeaderTitle highlightType="yellow" text="Desarrollo Web" />
+      </div>
+
+      {
+        proyects.map((proyect) => (
+          <div class="mb-32">
+            <h2 class="text-3xl font-bold text-center my-6">{proyect.title}</h2>
+            <div class="flex justify-center my-5">
+              <img class="w-36" src={proyect.proyect_logo} />
+            </div>
+            <p>{proyect.company_name}</p>
+            <p>{proyect.description}</p>
+            <p class="font-bold my-5">Tecnologias empleadas:</p>
+            <ul class="mt-2 list-disc list-inside">
+              {proyect.tecnologies.map((tecn, i) => (
+                <li>{tecn}</li>
+              ))}
+            </ul>
+            <p class="font-bold my-5">Caracteristicas:</p>
+            <ul class="mt-2 list-disc list-inside">
+              {proyect.caracteriticas.map((cart, i) => (
+                <li>{cart}</li>
+              ))}
+            </ul>
+            <div class="flex justify-center">
+              <img src={proyect.image_cover} alt={proyect.title}/>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </Container>
+</Layout>

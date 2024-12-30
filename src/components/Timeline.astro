@@ -1,0 +1,47 @@
+---
+import type { Experience } from "../interfaces/Experience.ts";
+
+interface Props {
+  experiences: Experience[];
+}
+
+const { experiences } = Astro.props;
+---
+
+<div class="py-10 px-4 w-full">
+  <div class="relative border-l-2 border-gray-900">
+    {
+      experiences.map((experience) => (
+        <article class="mb-10 ml-6 border-2 border-white transition-all hover:border-2 hover:border-[#00CEB3] rounded-3xl p-3">
+          <div class="mt-2 absolute w-4 h-4 bg-gray-900 rounded-full -left-2 border border-white" />
+          <div>
+            <div class="flex justify-between">
+              <h3 class="text-xl lg:text-2xl font-semibold">
+                {experience.title}
+              </h3>
+              {experience.proyect_logo && (
+                <img
+                  class="w-20 md:w-24 object-contain"
+                  src={experience.proyect_logo}
+                  alt={experience.title}
+                />
+              )}
+            </div>
+            <p class="text-md xl:text-lg text-gray-400">{experience.period}</p>
+            <p class="text-md xl:text-lg font-medium text-gray-400">
+              {experience.company}
+            </p>
+            <p class="text-sm md:text-lg lg:text-xl mt-2">
+              {experience.description}
+            </p>
+            <ul class="text-sm md:text-lg lg:text-xl mt-2 list-disc list-inside">
+              {experience.points.map((point, i) => (
+                <li>{point}</li>
+              ))}
+            </ul>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</div>

@@ -1,0 +1,32 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  icon: string;
+  link: string;
+}
+
+const { icon, link } = Astro.props;
+
+let IconComponent;
+let colorIcon;
+
+switch (icon) {
+  case "linkedin":
+    IconComponent = "mdi:linkedin";
+    colorIcon = "bg-blue-700";
+    break;
+  case "github":
+    IconComponent = "mdi:github";
+    colorIcon = "bg-neutral-950";
+    break;
+  default:
+    IconComponent = "mdi:help-circle";
+    colorIcon = "";
+    break;
+}
+---
+
+<a href={link} target="_blank" class={`rounded-full ${colorIcon} p-2`}>
+  <Icon name={IconComponent} class="text-3xl text-white" />
+</a>
