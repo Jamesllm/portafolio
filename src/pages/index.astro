@@ -204,6 +204,7 @@ const proyects: Proyect[] = [
   // },
   {
     title: "Gestion Biblioteca",
+    type: "proyect",
     proyect_logo: "",
     company_name: "",
     description:
@@ -215,7 +216,22 @@ const proyects: Proyect[] = [
     image_cover: "",
   },
   {
+    title: "number-to-letters-js",
+    type: "library",
+    proyect_logo: "",
+    company_name: "",
+    description:
+      "Convierte números a texto en formato para boletas y facturas electrónicas según la SUNAT Perú. Este paquete es una herramienta útil para convertir números a su representación textual. Ideal para aplicaciones que requieren formatos específicos en documentos como boletas y facturas.",
+    tecnologies: ["js", "Node.js"],
+    characteristics: [
+      "Convierte un número a letras en su forma básica.",
+      "Convierte un número a letras con el formato requerido para boletas o facturas electrónicas. Esta función permite especificar el tipo de moneda mediante un código."
+    ],
+    image_cover: "",
+  },
+  {
     title: "ContentFlow App",
+    type: "proyect",
     proyect_logo: contentflow_logo.src,
     company_name: "",
     description:
@@ -230,6 +246,7 @@ const proyects: Proyect[] = [
   },
   {
     title: "AnimeOs",
+    type: "proyect",
     proyect_logo: animeos_logo.src,
     company_name: "",
     description:
@@ -241,6 +258,7 @@ const proyects: Proyect[] = [
 
   {
     title: "PandaTools Libreria",
+    type: "proyect",
     proyect_logo: "",
     company_name: "",
     description:
@@ -253,6 +271,7 @@ const proyects: Proyect[] = [
   },
   {
     title: "Barber Can",
+    type: "proyect",
     proyect_logo: barbercan_logo.src,
     company_name: "",
     description:
@@ -263,6 +282,7 @@ const proyects: Proyect[] = [
   },
   {
     title: "Drago Assistance",
+    type: "proyect",
     proyect_logo: "",
     company_name: "",
     description:
@@ -319,6 +339,11 @@ const proyects: Proyect[] = [
             <div class="col-span-7 row-span-7 lg:col-span-2 lg:row-span-5">
               <div class="space-y-4 sticky top-16 left-0">
                 <h3 class="text-xl lg:text-2xl font-bold">{proyect.title}</h3>
+                {proyect.type === 'proyect' ? 
+                <p class="inline-flex items-center font-medium rounded-md text-sm px-2 py-1 text-blue-600 dark:text-blue-400 ring-1 ring-inset ring-blue-600 dark:ring-blue-400">Proyecto</p>
+                : 
+                <p class="inline-flex items-center font-medium rounded-md text-sm px-2 py-1 text-purple-600 dark:text-purple-400 ring-1 ring-inset ring-purple-600 dark:ring-purple-400">Libreria</p>
+                }
                 {proyect.company_name && (
                   <p class="text-medium md:text-lg border-2 border-gray-950 rounded-full px-4 py-1 w-fit">
                     {proyect.company_name}

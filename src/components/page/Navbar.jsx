@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DarkTheme from "../buttons/DarkTheme";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para controlar el menú
@@ -30,6 +31,8 @@ const Navbar = () => {
               <a href={link.to}>{link.name}</a>
             </li>
           ))}
+
+          <DarkTheme />
         </ul>
         {/* Botones para móviles */}
         <div className="sm:hidden">

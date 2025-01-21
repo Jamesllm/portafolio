@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import { useState } from "react";
 // import { Experience } from "../interfaces/Experience.ts";
 
