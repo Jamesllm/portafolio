@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex z-40 w-full h-auto py-3 items-center justify-center sticky top-0 inset-x-0 border-b border-divider backdrop-blur-lg backdrop-saturate-150 bg-background/70">
+    <nav className="flex z-40 w-full h-auto py-4 items-center justify-center sticky top-0 inset-x-0 border-b border-divider backdrop-blur-lg backdrop-saturate-150 bg-background/70">
       <header className="z-40 flex px-6 gap-4 w-full flex-row relative flex-nowrap items-center justify-between max-w-[1024px]">
         <a href="/" className="text-2xl font-bold">
           Ronal LLM
@@ -32,7 +32,7 @@ const Navbar = () => {
             </li>
           ))}
 
-          <DarkTheme />
+          <DarkTheme  />
         </ul>
         {/* Botones para móviles */}
         <div className="sm:hidden">
