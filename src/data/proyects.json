@@ -1,0 +1,110 @@
+[
+  {
+    "title": "FED (Facturacion Electronica Drago) Docs",
+    "proyect_logo": "/assets/logos/fed_logo.png",
+    "company_name": "Corporación Grupo Drago S.A.C",
+    "description": "Documentación del servicio de facturación electrónica de la empresa Drago, desarrollado utilizando Nuxt Docs para la creación de un sitio web moderno, interactivo y funcional.",
+    "tecnologies": ["Nuxt3 y NuxtDocs", "TailwindCSS"],
+    "characteristics": [
+      "Diseño intuitivo que facilita la navegación y comprensión del contenido.",
+      "Organización estructurada de la documentación técnica para desarrolladores e implementadores.",
+      "Incluye guías sobre el uso de la API para consulta de información a la SUNAT y el manejo de XML para la emisión de comprobantes electrónicos (boletas, facturas, notas de crédito y débito)."
+    ],
+    "image_cover": "/assets/fed_cover.png"
+  },
+  {
+    "title": "Falconix Docs",
+    "proyect_logo": "/assets/falconix_logo.png",
+    "company_name": "Corporación Grupo Drago S.A.C",
+    "description": "Documentación del sistema Falconix, una solución diseñada para la automatización y monitoreo de tareas repetitivas en entornos empresariales, desarrollado utilizando Nuxt Docs para presentar la información de forma clara y estructurada.",
+    "tecnologies": ["Nuxt3 y NuxtDocs", "TailwindCSS"],
+    "characteristics": [
+      "Automatización de tareas: Programa y configura tareas repetitivas con formato cron, incluyendo el envío de correos electrónicos con parámetros previamente establecidos.",
+      "Registro de ejecuciones: Visualización y almacenamiento detallado de las ejecuciones, destacando errores y éxitos para facilitar el análisis y solución de problemas.",
+      "Inicio de sesión: Acceso restringido para mayor seguridad, integrando una interfaz de usuario simplificada."
+    ],
+    "image_cover": "/assets/falconix_cover.png"
+  },
+  {
+    "title": "Gestion Biblioteca",
+    "type": "proyect",
+    "proyect_logo": "",
+    "company_name": "",
+    "description": "Programa creado con el fin de gestionar libros de una biblioteca, empleando tecnologias como Java Swing y SQLSERVER para el manejo de datos",
+    "tecnologies": ["Java", "Java Swing", "SQLServer", "SSMS"],
+    "characteristics": [
+      "Los administradores pueden gestionar datos como usuarios, categorías e idiomas."
+    ],
+    "image_cover": ""
+  },
+  {
+    "title": "Number to letters js",
+    "type": "library",
+    "proyect_logo": "",
+    "company_name": "",
+    "description": "Convierte números a texto en formato para boletas y facturas electrónicas según la SUNAT Perú. Este paquete es una herramienta útil para convertir números a su representación textual. Ideal para aplicaciones que requieren formatos específicos en documentos como boletas y facturas.",
+    "tecnologies": ["js", "Node.js"],
+    "characteristics": [
+      "Convierte un número a letras en su forma básica.",
+      "Convierte un número a letras con el formato requerido para boletas o facturas electrónicas. Esta función permite especificar el tipo de moneda mediante un código."
+    ],
+    "image_cover": ""
+  },
+  {
+    "title": "ContentFlow App",
+    "type": "proyect",
+    "proyect_logo": "/assets/contentflow_logo.png",
+    "company_name": "",
+    "description": "ContentFlow es una aplicación desarrollada en Java Swing que permite a los usuarios interactuar con contenidos dinámicos de manera eficiente. Este proyecto está diseñado para gestionar contenidos multimedia (libros, música, películas), con características como agregar favoritos, administrar usuarios y categorías, y generar reportes en forma de grafico de barras.",
+    "tecnologies": ["Java", "Java Swing", "SQLServer", "SSMS"],
+    "characteristics": [
+      "Subida y gestión de contenido: Los usuarios pueden agregar contenido personalizado y administrarlo de manera eficiente.",
+      "Favoritos y vistas: Posibilidad de agregar contenido a favoritos y llevar un historial de contenido visto.",
+      "Administración avanzada: Los administradores pueden gestionar datos como usuarios, categorías e idiomas."
+    ],
+    "image_cover": "/assets/contentflow_cover.jpg"
+  },
+  {
+    "title": "AnimeOs",
+    "type": "proyect",
+    "proyect_logo": "/assets/animeos_logo.png",
+    "company_name": "",
+    "description": "AnimeOs es una página web desarrollada con React.js que recopila información detallada de animes y películas, brindando a los usuarios acceso a un amplio catálogo organizado y fácil de explorar.",
+    "tecnologies": ["Reactjs", "sass"],
+    "characteristics": [],
+    "image_cover": "/assets/animeos_cover.png"
+  },
+
+  {
+    "title": "PandaTools Libreria",
+    "type": "proyect",
+    "proyect_logo": "",
+    "company_name": "",
+    "description": "PandaTools es un proyecto diseñado para mejorar la experiencia de usuario en la terminal, proporcionando la capacidad de mostrar colores y formatos personalizados. Permite imprimir matrices con estilos configurables, aceptando una amplia variedad de parámetros para personalizar la presentación, incluyendo colores, estilos de texto y bordes.",
+    "tecnologies": ["Java"],
+    "characteristics": [
+      "Contiene 3 modulos (Term, Panda, Database), modulos que facilitan la muestra de datos en la terminal asi como tambien la conexion a diferentes base de datos SQL"
+    ],
+    "image_cover": "/assets/pandadocs_cover.png"
+  },
+  {
+    "title": "Barber Can",
+    "type": "proyect",
+    "proyect_logo": "/assets/barbercan_logo.png",
+    "company_name": "",
+    "description": "La propuesta presentada tiene como objetivo ofrecer a los usuarios una interfaz intuitiva, diseñada para facilitar la creación de identificaciones para sus mascotas de manera sencilla. Esta herramienta generará un archivo PDF imprimible que podrá utilizarse posteriormente. ",
+    "tecnologies": ["PHP", "CSS", "JS", "HTML5"],
+    "characteristics": [],
+    "image_cover": "/assets/barbercan_cover.jpg"
+  },
+  {
+    "title": "Drago Assistance",
+    "type": "proyect",
+    "proyect_logo": "",
+    "company_name": "",
+    "description": "Propuesta de solución a un problema de la empresa Drago, desarrollado con el objetivo de aplicar los conceptos aprendidos en el desarrollo web moderno.",
+    "tecnologies": ["ReactJS", "Node.js", "PostgreSQL"],
+    "characteristics": [],
+    "image_cover": "/assets/dragoasis_cover.jpg"
+  }
+]

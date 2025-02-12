@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para controlar el menú
 
   const links = [
-    { name: "Proyectos", to: "/proyectos" },
+    // { name: "Proyectos", to: "/proyectos" },
     { name: "Contacto", to: "https://www.linkedin.com/in/ronal-llapapasca/" },
   ];
 

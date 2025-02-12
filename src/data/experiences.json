@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Phuyu Consulting - ChatBot",
+    "period": "Diciembre 2024 - Actual",
+    "company": "",
+    "proyect_logo": "",
+    "description": "",
+    "points": [
+      "Desarrollé una API utilizando Flask para gestionar y almacenar información en una base de datos MongoDB.",
+      "Implementé una búsqueda vectorial optimizar la consulta y recuperación de datos en la base de conocimiento del chatbot."
+    ]
+  },
+  {
+    "title": "Sitio web - Datahub by Drago",
+    "period": "Septiembre 2024 - Octubre 2024",
+    "company": "Corporación Grupo Drago S.A.C",
+    "proyect_logo": "/assets/logos/datahub_logo.webp",
+    "description": "",
+    "points": [
+      "Desarrollé componentes personalizados en Vue.js, aportando al diseño y funcionalidad del sitio web.",
+      "Optimicé la responsividad del sitio web, asegurando una experiencia de usuario fluida."
+    ]
+  },
+  {
+    "title": "Marvin AI",
+    "period": "Agosto 2024 - Septiembre 2024",
+    "company": "Corporación Grupo Drago S.A.C",
+    "proyect_logo": "/assets/logos/marvin_logo.png",
+    "description": "Participé en la creación de Marvin, una inteligencia artificial diseñada para responder preguntas frecuentes y realizar consultas de productos, mejorando significativamente la experiencia e interacción con los clientes.",
+    "points": [
+      "Integración de modelos de GPT como GPT-3.5 Turbo para ofrecer respuestas precisas y contextuales.",
+      "Uso de ChromaDB para almacenar datos no estructurados y PostgreSQL para datos relacionales, optimizando el rendimiento y la escalabilidad.",
+      "Implementación de un servidor utilizando Flask, asegurando una comunicación rápida y segura entre el cliente y la IA."
+    ]
+  },
+  {
+    "title": "Sitio web - TuMerka",
+    "period": "Julio 2024 - Agosto 2024",
+    "company": "Corporación Grupo Drago S.A.C",
+    "proyect_logo": "/assets/logos/tumerka_logo.png",
+    "description": "",
+    "points": [
+      "Implementé el módulo de suscripción en la página web, optimizando la experiencia del usuario.",
+      "Aporte en la funcionalidad de una API Rest utilizando Node.js, Express y PostgreSQL para integrar las funcionalidades del sistema.",
+      "Colaboré en la creación de un chatbot basado en un modelo de ChatGPT, utilizado para responder preguntas frecuentes y realizar búsquedas de productos.",
+      "Mejora de UI, optimizar y garantizar que el diseño sea responsive."
+    ]
+  },
+  {
+    "title": "Falconix Docs",
+    "period": "",
+    "company": "Corporación Grupo Drago S.A.C",
+    "description": "Documentación del sistema Falconix, una solución diseñada para la automatización y monitoreo de tareas repetitivas en entornos empresariales. El proyecto utilizó Nuxt Docs para estructurar y presentar la información de forma clara y accesible.",
+    "points": [
+      "Diseñé y planifiqué la estructura del sitio web para maximizar la usabilidad y navegabilidad.",
+      "Implementé un proyecto integral utilizando Nuxt Docs, asegurando una presentación intuitiva de la documentación.",
+      "Creé una guía de uso detallada para los distintos endpoints disponibles en la API, facilitando la integración por parte de los desarrolladores.",
+      "Utilicé tecnologías como Markdown para la creación de contenidos dinámicos y Tailwind CSS para lograr un diseño visual atractivo y consistente."
+    ]
+  },
+  {
+    "title": "FED (Facturacion Electronica Drago) Docs",
+    "period": "",
+    "company": "Corporación Grupo Drago S.A.C",
+    "proyect_logo": "/assets/logos/fed_logo.png",
+    "description": "Documentación del servicio de facturación electrónica de la empresa Drago. Este proyecto empleó Nuxt Docs para desarrollar un sitio web moderno, interactivo y funcional.",
+    "points": [
+      "Utilicé Nuxt Docs para desarrollar un sitio web moderno, interactivo y funcional.",
+      "Diseñé la arquitectura del sitio para garantizar una navegación intuitiva y accesible.",
+      "Elaboré guías exhaustivas para el uso de la API, detallando los diferentes endpoints disponibles para facilitar su implementación en otros sistemas."
+    ]
+  },
+  {
+    "title": "FED (Facturacion Electronica Drago)",
+    "period": "Julio 2024 - Agosto 2024",
+    "company": "Corporación Grupo Drago S.A.C",
+    "proyect_logo": "/assets/logos/fed_logo.png",
+    "description": "Documentación e implementación del servicio de facturación electrónica de la empresa Drago. Este proyecto se desarrolló usando Python, adaptando las funcionalidades implementadas previamente en el API Drago Facturador V1.",
+    "points": [
+      "Implementé consultas a la SUNAT mediante el número de identificación como DNI, RUC, pasaporte y carnet de extranjería.",
+      "Realicé el envío de XML a la SUNAT de tipo: boleta, factura, nota de crédito y nota de débito.",
+      "Desarrollo de una API para la integración con los servicios de la SUNAT utilizando Python como lenguaje principal."
+    ]
+  },
+  {
+    "title": "API Drago Facturador V1",
+    "period": "Diciembre 2023 - Mayo 2024",
+    "company": "Corporación Grupo Drago S.A.C",
+    "proyect_logo": "",
+    "description": "Desarrollo e implementación de un servicio de facturación electrónica para la empresa Drago, diseñado como una API centralizada para ser consumida por otros servicios internos de la organización.",
+    "points": [
+      "El proyecto se desarrolló utilizando PHP y Composer, asegurando una arquitectura escalable y eficiente.",
+      "Permitió la emisión de comprobantes electrónicos, incluyendo boletas, facturas, notas de crédito y notas de débito, cumpliendo con los estándares de la SUNAT.",
+      "Integración de consultas a la SUNAT mediante identificaciones como DNI, RUC, pasaporte y carnet de extranjería.",
+      "Creación de una solución flexible para optimizar el proceso de facturación en los diversos servicios de la empresa."
+    ]
+  },
+  {
+    "title": "Drago Intranet",
+    "period": "Octubre 2023 - Nov 2023",
+    "company": "Corporación Grupo Drago S.A.C",
+    "proyect_logo": "",
+    "description": "",
+    "points": [
+      "Diseño y planificación de la estructura del sitio web.",
+      "Implementación de un nuevo proyecto utilizando Nuxt3.",
+      "Configuración y optimización de Vue.js dentro del entorno Nuxt3.",
+      "Mejora de la experiencia de usuario mediante la creación de componentes esenciales en Vue.js,  promoviendo una mayor coherencia visual y una interacción fluida en todas las secciones del sitio.",
+      "Colaboración en la elaboración de la API REST para el sistema, empleando tecnologías como  Node.js y Express."
+    ]
+  },
+  {
+    "title": "Test&Control",
+    "period": "Julio 2023 - Septiembre 2023",
+    "company": "Corporación Grupo Drago S.A.C",
+    "proyect_logo": "/assets/logos/testcontrol_logo.png",
+    "description": "",
+    "points": [
+      "Diseño de la estructura base del sitio web (header, main, footer).",
+      "Creación de un nuevo proyecto utilizando Nuxt3.",
+      "Creación de componentes Vue básicos para diferentes secciones del sitio.",
+      "Implementación de rutas con Nuxt3 para la navegación."
+    ]
+  },
+  {
+    "title": "Sitio web - Drago",
+    "period": "Diciembre 2021 - Abril 2022",
+    "company": "Corporación Grupo Drago S.A.C",
+    "proyect_logo": "/assets/logos/drago_logo.png",
+    "description": "",
+    "points": [
+      "Aporte con la elaboracion de la estructura de la API REST para el sistema, empleando Node.js y Express",
+      "Garantize que el diseño sea responsive.",
+      "Implementé el módulo de busqueda, asegurandome que el diseño sea responsive y funcional."
+    ]
+  }
+]
