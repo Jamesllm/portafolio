@@ -4,9 +4,10 @@ import { Icon } from "astro-icon/components";
 interface Props {
   icon: string;
   link: string;
+  ariaLabel: string;
 }
 
-const { icon, link } = Astro.props;
+const { icon, link, ariaLabel } = Astro.props;
 
 let IconComponent;
 let colorIcon;
@@ -27,6 +28,11 @@ switch (icon) {
 }
 ---
 
-<a href={link} target="_blank" class={`rounded-full ${colorIcon} p-2`}>
+<a
+  href={link}
+  target="_blank"
+  class={`rounded-full ${colorIcon} p-2`}
+  aria-label={ariaLabel}
+>
   <Icon name={IconComponent} class="text-3xl text-white" />
 </a>

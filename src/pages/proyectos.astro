@@ -13,12 +13,12 @@ interface Proyect {
   image_cover: string;
 }
 
-import fed_cover from "../../public/assets/fed_cover.png";
-import fed_logo from "../../public/assets/logos/fed_logo.png";
-import falconix_cover from "../../public/assets/falconix_cover.png";
-import falconix_logo from "../../public/assets/falconix_logo.png";
-import animeos_cover from "../../public/assets/animeos_cover.png";
-import animeos_logo from "../../public/assets/animeos_logo.png";
+import fed_cover from "../../public/assets/fed_cover.webp";
+import fed_logo from "../../public/assets/logos/fed_logo.webp";
+import falconix_cover from "../../public/assets/falconix_cover.webp";
+import falconix_logo from "../../public/assets/falconix_logo.webp";
+import animeos_cover from "../../public/assets/animeos_cover.webp";
+import animeos_logo from "../../public/assets/animeos_logo.webp";
 
 const proyects: Proyect[] = [
   {
@@ -75,7 +75,7 @@ const proyects: Proyect[] = [
           <div class="mb-32">
             <h2 class="text-3xl font-bold text-center my-6">{proyect.title}</h2>
             <div class="flex justify-center my-5">
-              <img class="w-36" src={proyect.proyect_logo} />
+              <img class="w-36" src={proyect.proyect_logo} loading="lazy"/>
             </div>
             <p>{proyect.company_name}</p>
             <p>{proyect.description}</p>
@@ -92,7 +92,7 @@ const proyects: Proyect[] = [
               ))}
             </ul>
             <div class="flex justify-center">
-              <img src={proyect.image_cover} alt={proyect.title}/>
+              <img src={proyect.image_cover} alt={proyect.title} loading="lazy"/>
             </div>
           </div>
         ))

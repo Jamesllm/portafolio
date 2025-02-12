@@ -15,7 +15,7 @@
   {
     "title": "ContentFlow App",
     "type": "proyect",
-    "proyect_logo": "/assets/contentflow_logo.png",
+    "proyect_logo": "/assets/contentflow_logo.webp",
     "company_name": "",
     "description": "ContentFlow es una aplicación desarrollada en Java Swing que permite a los usuarios interactuar con contenidos dinámicos de manera eficiente. Este proyecto está diseñado para gestionar contenidos multimedia (libros, música, películas), con características como agregar favoritos, administrar usuarios y categorías, y generar reportes en forma de grafico de barras.",
     "tecnologies": ["Java", "Java Swing", "SQLServer", "SSMS"],
@@ -24,17 +24,17 @@
       "Favoritos y vistas: Posibilidad de agregar contenido a favoritos y llevar un historial de contenido visto.",
       "Administración avanzada: Los administradores pueden gestionar datos como usuarios, categorías e idiomas."
     ],
-    "image_cover": "/assets/contentflow_cover.jpg"
+    "image_cover": "/assets/contentflow_cover.webp"
   },
   {
     "title": "AnimeOs",
     "type": "proyect",
-    "proyect_logo": "/assets/animeos_logo.png",
+    "proyect_logo": "/assets/animeos_logo.webp",
     "company_name": "",
     "description": "AnimeOs es una página web desarrollada con React.js que recopila información detallada de animes y películas, brindando a los usuarios acceso a un amplio catálogo organizado y fácil de explorar.",
     "tecnologies": ["Reactjs", "sass"],
     "characteristics": [],
-    "image_cover": "/assets/animeos_cover.png"
+    "image_cover": "/assets/animeos_cover.webp"
   },
 
   {
@@ -47,17 +47,17 @@
     "characteristics": [
       "Contiene 3 modulos (Term, Panda, Database), modulos que facilitan la muestra de datos en la terminal asi como tambien la conexion a diferentes base de datos SQL"
     ],
-    "image_cover": "/assets/pandadocs_cover.png"
+    "image_cover": "/assets/pandadocs_cover.webp"
   },
   {
     "title": "Barber Can",
     "type": "proyect",
-    "proyect_logo": "/assets/barbercan_logo.png",
+    "proyect_logo": "/assets/barbercan_logo.webp",
     "company_name": "",
     "description": "La propuesta presentada tiene como objetivo ofrecer a los usuarios una interfaz intuitiva, diseñada para facilitar la creación de identificaciones para sus mascotas de manera sencilla. Esta herramienta generará un archivo PDF imprimible que podrá utilizarse posteriormente. ",
     "tecnologies": ["PHP", "CSS", "JS", "HTML5"],
     "characteristics": [],
-    "image_cover": "/assets/barbercan_cover.jpg"
+    "image_cover": "/assets/barbercan_cover.webp"
   },
   {
     "title": "Drago Assistance",
@@ -67,6 +67,6 @@
     "description": "Propuesta de solución a un problema de la empresa Drago, desarrollado con el objetivo de aplicar los conceptos aprendidos en el desarrollo web moderno.",
     "tecnologies": ["ReactJS", "Node.js", "PostgreSQL"],
     "characteristics": [],
-    "image_cover": "/assets/dragoasis_cover.jpg"
+    "image_cover": "/assets/dragoasis_cover.webp"
   }
 ]

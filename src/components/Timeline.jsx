@@ -28,6 +28,7 @@ const Timeline = ({ experiences }) => {
                     className="w-20 md:w-24 object-contain"
                     src={experience.proyect_logo}
                     alt={experience.title}
+                    loading="lazy"
                   />
                 )}
               </div>

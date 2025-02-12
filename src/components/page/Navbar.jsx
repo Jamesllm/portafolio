@@ -2,15 +2,14 @@ import React, { useState } from "react";
 import DarkTheme from "../buttons/DarkTheme";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para controlar el menú
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const links = [
-    // { name: "Proyectos", to: "/proyectos" },
     { name: "Contacto", to: "https://www.linkedin.com/in/ronal-llapapasca/" },
   ];
 
   const handleHamburgerClick = () => {
-    setIsMenuOpen(!isMenuOpen); // Cambiar el estado del menú
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -19,31 +18,37 @@ const Navbar = () => {
         <a href="/" className="text-2xl font-bold">
           Ronal LLM
         </a>
+
         {/* Menú principal */}
-        <ul
-          className="h-full flex-row flex-nowrap items-center gap-4 sm:flex hidden"
-        >
+        <ul className="h-full flex-row flex-nowrap items-center gap-4 sm:flex hidden">
           {links.map((link) => (
             <li
               className="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold"
               key={link.to}
             >
-              <a href={link.to}>{link.name}</a>
+              <a href={link.to} aria-label={`Ir a ${link.name}`}>
+                {link.name}
+              </a>
             </li>
           ))}
-
-          <DarkTheme  />
+          <li> {/* Agregar DarkTheme dentro de <li> */}
+            <DarkTheme />
+          </li>
         </ul>
+
         {/* Botones para móviles */}
         <div className="sm:hidden">
           {/* Botón hamburger */}
-          <button onClick={handleHamburgerClick}>
+          <button 
+            onClick={handleHamburgerClick} 
+            aria-label="Abrir menú de navegación"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={24}
               height={24}
               viewBox="0 0 24 24"
-              className={`${isMenuOpen ? "hidden" : "block"}`} // Ocultar el hamburger cuando el menú está abierto
+              className={`${isMenuOpen ? "hidden" : "block"}`}
             >
               <path
                 fill="currentColor"
@@ -51,14 +56,18 @@ const Navbar = () => {
               ></path>
             </svg>
           </button>
+
           {/* Botón close */}
-          <button onClick={handleHamburgerClick}>
+          <button 
+            onClick={handleHamburgerClick} 
+            aria-label="Cerrar menú de navegación"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={24}
               height={24}
               viewBox="0 0 24 24"
-              className={`${!isMenuOpen ? "hidden" : "block"}`} // Ocultar el close cuando el menú está cerrado
+              className={`${!isMenuOpen ? "hidden" : "block"}`}
             >
               <path
                 fill="currentColor"
@@ -77,11 +86,10 @@ const Navbar = () => {
       >
         <ul className="flex flex-col items-center py-4">
           {links.map((link) => (
-            <li
-              className="text-medium py-2 text-center"
-              key={link.to}
-            >
-              <a href={link.to}>{link.name}</a>
+            <li className="text-medium py-2 text-center" key={link.to}>
+              <a href={link.to} aria-label={`Ir a ${link.name}`}>
+                {link.name}
+              </a>
             </li>
           ))}
         </ul>

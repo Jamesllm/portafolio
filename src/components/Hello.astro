@@ -1,5 +1,5 @@
 ---
-import perfil from "../../public/assets/perfil.jpg";
+import perfil from "../../public/assets/perfil.webp";
 import ButtonCV from "./buttons/ButtonCV.astro";
 import ButtonRounded from "./buttons/ButtonRounded.astro";
 
@@ -20,20 +20,22 @@ const { name, charge } = Astro.props;
         {name}
       </h1>
     </div>
-    <h3 class="font-semibold text-xl xl:text-3xl text-teal-500">{charge}</h3>
+    <h2 class="font-semibold text-xl xl:text-3xl text-teal-500">{charge}</h2>
   </div>
   <div class="flex flex-col items-center">
     <img
       class="rounded-full w-64 h-64 md:w-96 md:h-96 mb-4 object-cover"
       src={perfil.src}
       alt="Ronal Llapapasca Montes"
+      loading="lazy"
     />
     <div class="flex justify-center items-center gap-5">
       <!-- <ButtonCV /> -->
-      <ButtonRounded icon="github" link="https://github.com/Jamesllm" />
+      <ButtonRounded icon="github" link="https://github.com/Jamesllm" ariaLabel="Perfil de GitHub de Ronal Llapapasca" />
       <ButtonRounded
         icon="linkedin"
         link="https://www.linkedin.com/in/ronal-llapapasca/"
+        ariaLabel="Perfil de Linkedin de Ronal Llapapasca"
       />
     </div>
   </div>

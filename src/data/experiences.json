@@ -14,7 +14,7 @@
     "title": "Marvin AI",
     "period": "Agosto 2024 - Septiembre 2024",
     "company": "Corporación Grupo Drago S.A.C",
-    "proyect_logo": "/assets/logos/marvin_logo.png",
+    "proyect_logo": "/assets/logos/marvin_logo.webp",
     "description": "Participé en la creación de Marvin, una inteligencia artificial diseñada para responder preguntas frecuentes y realizar consultas de productos, mejorando significativamente la experiencia e interacción con los clientes.",
     "points": [
       "Integración de modelos de GPT como GPT-3.5 Turbo para ofrecer respuestas precisas y contextuales.",
@@ -26,7 +26,7 @@
     "title": "Sitio web - TuMerka",
     "period": "Julio 2024 - Agosto 2024",
     "company": "Corporación Grupo Drago S.A.C",
-    "proyect_logo": "/assets/logos/tumerka_logo.png",
+    "proyect_logo": "/assets/logos/tumerka_logo.webp",
     "description": "",
     "points": [
       "Implementé el módulo de suscripción en la página web, optimizando la experiencia del usuario.",
@@ -39,7 +39,7 @@
     "title": "FED (Facturacion Electronica Drago)",
     "period": "Julio 2024 - Agosto 2024",
     "company": "Corporación Grupo Drago S.A.C",
-    "proyect_logo": "/assets/logos/fed_logo.png",
+    "proyect_logo": "/assets/logos/fed_logo.webp",
     "description": "Documentación e implementación del servicio de facturación electrónica de la empresa Drago. Este proyecto se desarrolló usando Python, adaptando las funcionalidades implementadas previamente en el API Drago Facturador V1.",
     "points": [
       "Implementé consultas a la SUNAT mediante el número de identificación como DNI, RUC, pasaporte y carnet de extranjería.",
@@ -78,7 +78,7 @@
     "title": "Test&Control",
     "period": "Julio 2023 - Septiembre 2023",
     "company": "Corporación Grupo Drago S.A.C",
-    "proyect_logo": "/assets/logos/testcontrol_logo.png",
+    "proyect_logo": "/assets/logos/testcontrol_logo.webp",
     "description": "",
     "points": [
       "Diseño de la estructura base del sitio web (header, main, footer).",
@@ -91,7 +91,7 @@
     "title": "Sitio web - Drago",
     "period": "Diciembre 2021 - Abril 2022",
     "company": "Corporación Grupo Drago S.A.C",
-    "proyect_logo": "/assets/logos/drago_logo.png",
+    "proyect_logo": "/assets/logos/drago_logo.webp",
     "description": "",
     "points": [
       "Aporte con la elaboracion de la estructura de la API REST para el sistema, empleando Node.js y Express",

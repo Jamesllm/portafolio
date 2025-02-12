@@ -1,6 +1,11 @@
 ---
 import Navbar from "../components/page/Navbar";
 import Footer from "../components/page/Footer.astro";
+
+const title = "Ronal LLM - Portafolio";
+const description = "Soy estudiante de Ingeniería de Sistemas e Informática con experiencia en desarrollo web, APIs y servicios basados en inteligencia artificial.";
+const url = "https://ronal-llm-portafolio.vercel.app/";
+// const image = "https://ronal-llm-portafolio.vercel.app/imagen-destacada.jpg";
 ---
 
 <!doctype html>
@@ -11,6 +16,22 @@ import Footer from "../components/page/Footer.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Ronal LLM</title>
+
+    <!-- Open Graph (para compartir en redes sociales) -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <!-- <meta property="og:image" content={image} /> -->
+    <meta property="og:url" content={url} />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <!-- <meta name="twitter:image" content={image} /> -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
   </head>
   <body class="font-normal dark:bg-stone-950">
     <Navbar client:only="react" />

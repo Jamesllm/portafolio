@@ -70,7 +70,7 @@ import proyects from "../data/proyects.json"
                 <div class="my-5">
                   {
                     proyect.proyect_logo && (
-                      <img class="w-20 md:w-24 object-contain" src={proyect.proyect_logo} alt={proyect.title.trim().toLowerCase()} />
+                      <img class="w-20 md:w-24 object-contain" src={proyect.proyect_logo} alt={proyect.title.trim().toLowerCase()} loading="lazy" />
                     )
                   }
                 </div>
@@ -101,7 +101,7 @@ import proyects from "../data/proyects.json"
               <div class="flex justify-center pb-10 mt-4">
                 {
                   proyect.image_cover && (
-                    <img src={proyect.image_cover} alt={proyect.title.trim().toLowerCase()} />
+                    <img src={proyect.image_cover} alt={proyect.title.trim().toLowerCase()} loading="lazy"/>
                   )
                 }
               </div>
