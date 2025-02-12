@@ -15,7 +15,7 @@ const Timeline = ({ experiences }) => {
         {experiences.slice(0, visibleExperiences).map((experience) => (
           <article
             key={experience.title}
-            className="mb-10 ml-6 border-2 border-white dark:border-gray-900 dark:bg-gray-900/45 transition-all hover:border-2 hover:border-teal-500 dark:hover:border-teal-500 rounded-3xl p-3"
+            className="mb-10 ml-6 border-2 border-white dark:border-gray-900 dark:bg-gray-500/20 transition-all hover:border-2 hover:border-teal-500 dark:hover:border-teal-500 rounded-3xl p-3"
           >
             <div className="mt-2 absolute w-4 h-4 bg-gray-900 rounded-full -left-2 border border-white" />
             <div>
@@ -54,7 +54,7 @@ const Timeline = ({ experiences }) => {
         <div className="flex justify-center items-center">
           <button
             onClick={handleShowMore}
-            className="py-3 px-6 bg-teal-600 text-white rounded-full"
+            className="py-3 px-6 bg-teal-500 transition-all hover:bg-teal-600 text-white rounded-full"
           >
             Mostrar más
           </button>

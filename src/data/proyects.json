@@ -1,43 +1,5 @@
 [
   {
-    "title": "FED (Facturacion Electronica Drago) Docs",
-    "proyect_logo": "/assets/logos/fed_logo.png",
-    "company_name": "Corporación Grupo Drago S.A.C",
-    "description": "Documentación del servicio de facturación electrónica de la empresa Drago, desarrollado utilizando Nuxt Docs para la creación de un sitio web moderno, interactivo y funcional.",
-    "tecnologies": ["Nuxt3 y NuxtDocs", "TailwindCSS"],
-    "characteristics": [
-      "Diseño intuitivo que facilita la navegación y comprensión del contenido.",
-      "Organización estructurada de la documentación técnica para desarrolladores e implementadores.",
-      "Incluye guías sobre el uso de la API para consulta de información a la SUNAT y el manejo de XML para la emisión de comprobantes electrónicos (boletas, facturas, notas de crédito y débito)."
-    ],
-    "image_cover": "/assets/fed_cover.png"
-  },
-  {
-    "title": "Falconix Docs",
-    "proyect_logo": "/assets/falconix_logo.png",
-    "company_name": "Corporación Grupo Drago S.A.C",
-    "description": "Documentación del sistema Falconix, una solución diseñada para la automatización y monitoreo de tareas repetitivas en entornos empresariales, desarrollado utilizando Nuxt Docs para presentar la información de forma clara y estructurada.",
-    "tecnologies": ["Nuxt3 y NuxtDocs", "TailwindCSS"],
-    "characteristics": [
-      "Automatización de tareas: Programa y configura tareas repetitivas con formato cron, incluyendo el envío de correos electrónicos con parámetros previamente establecidos.",
-      "Registro de ejecuciones: Visualización y almacenamiento detallado de las ejecuciones, destacando errores y éxitos para facilitar el análisis y solución de problemas.",
-      "Inicio de sesión: Acceso restringido para mayor seguridad, integrando una interfaz de usuario simplificada."
-    ],
-    "image_cover": "/assets/falconix_cover.png"
-  },
-  {
-    "title": "Gestion Biblioteca",
-    "type": "proyect",
-    "proyect_logo": "",
-    "company_name": "",
-    "description": "Programa creado con el fin de gestionar libros de una biblioteca, empleando tecnologias como Java Swing y SQLSERVER para el manejo de datos",
-    "tecnologies": ["Java", "Java Swing", "SQLServer", "SSMS"],
-    "characteristics": [
-      "Los administradores pueden gestionar datos como usuarios, categorías e idiomas."
-    ],
-    "image_cover": ""
-  },
-  {
     "title": "Number to letters js",
     "type": "library",
     "proyect_logo": "",

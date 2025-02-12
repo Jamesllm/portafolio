@@ -1,5 +1,16 @@
 [
   {
+    "title": "Phuyu Consulting - ChatBot",
+    "period": "Diciembre 2024 - Actual",
+    "company": "",
+    "proyect_logo": "",
+    "description": "",
+    "points": [
+      "Desarrollé una API utilizando Flask para gestionar y almacenar información en una base de datos MongoDB.",
+      "Implementé una búsqueda vectorial optimizar la consulta y recuperación de datos en la base de conocimiento del chatbot."
+    ]
+  },
+  {
     "title": "Sitio web - Datahub by Drago",
     "period": "Septiembre 2024 - Octubre 2024",
     "company": "Corporación Grupo Drago S.A.C",
@@ -33,6 +44,30 @@
       "Aporte en la funcionalidad de una API Rest utilizando Node.js, Express y PostgreSQL para integrar las funcionalidades del sistema.",
       "Colaboré en la creación de un chatbot basado en un modelo de ChatGPT, utilizado para responder preguntas frecuentes y realizar búsquedas de productos.",
       "Mejora de UI, optimizar y garantizar que el diseño sea responsive."
+    ]
+  },
+  {
+    "title": "Falconix Docs",
+    "period": "",
+    "company": "Corporación Grupo Drago S.A.C",
+    "description": "Documentación del sistema Falconix, una solución diseñada para la automatización y monitoreo de tareas repetitivas en entornos empresariales. El proyecto utilizó Nuxt Docs para estructurar y presentar la información de forma clara y accesible.",
+    "points": [
+      "Diseñé y planifiqué la estructura del sitio web para maximizar la usabilidad y navegabilidad.",
+      "Implementé un proyecto integral utilizando Nuxt Docs, asegurando una presentación intuitiva de la documentación.",
+      "Creé una guía de uso detallada para los distintos endpoints disponibles en la API, facilitando la integración por parte de los desarrolladores.",
+      "Utilicé tecnologías como Markdown para la creación de contenidos dinámicos y Tailwind CSS para lograr un diseño visual atractivo y consistente."
+    ]
+  },
+  {
+    "title": "FED (Facturacion Electronica Drago) Docs",
+    "period": "",
+    "company": "Corporación Grupo Drago S.A.C",
+    "proyect_logo": "/assets/logos/fed_logo.png",
+    "description": "Documentación del servicio de facturación electrónica de la empresa Drago. Este proyecto empleó Nuxt Docs para desarrollar un sitio web moderno, interactivo y funcional.",
+    "points": [
+      "Utilicé Nuxt Docs para desarrollar un sitio web moderno, interactivo y funcional.",
+      "Diseñé la arquitectura del sitio para garantizar una navegación intuitiva y accesible.",
+      "Elaboré guías exhaustivas para el uso de la API, detallando los diferentes endpoints disponibles para facilitar su implementación en otros sistemas."
     ]
   },
   {
