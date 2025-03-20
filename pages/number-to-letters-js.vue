@@ -78,11 +78,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Footer -->
-                <div class="bg-gray-50 border-t border-gray-200 p-4 text-center text-gray-500 text-sm">
-                    Convertidor de Números a Letras v1.2.2 by <NuxtLink to="https://github.com/Jamesllm"
-                        class="text-primary underline">Jamesllm</NuxtLink>
-                </div>
             </div>
 
             <div v-if="activeTab === 'docs'">
@@ -90,6 +85,18 @@
                     <h1 class="text-2xl font-bold my-2">📖 Documentación</h1>
                     <div v-html="renderedMarkdown" class="prose max-w-none"></div>
                 </section>
+            </div>
+
+            <!-- Footer -->
+            <div class="bg-gray-50 border-t border-gray-200 p-4 text-center text-gray-500 text-sm">
+                <p> Convertidor de Números a Letras v1.2.2 by <NuxtLink to="https://github.com/Jamesllm"
+                        class="text-primary underline">Jamesllm</NuxtLink>
+                </p>
+                <p class="mt-1">
+                    <NuxtLink target="_blank" to="https://www.npmjs.com/package/number-to-letters-js">
+                        <Icon name=logos:npm />
+                    </NuxtLink>
+                </p>
             </div>
         </div>
 
@@ -147,7 +154,8 @@ useSeoMeta({
     border-collapse: collapse;
 }
 
-.prose th, .prose td {
+.prose th,
+.prose td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
@@ -157,5 +165,4 @@ useSeoMeta({
     background-color: #f4f4f4;
     font-weight: bold;
 }
-
 </style>
