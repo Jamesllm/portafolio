@@ -144,8 +144,19 @@ async function loadDocumentation() {
 }
 
 useSeoMeta({
-    title: "Number to letters",
+    title: "Número a Letras - Convierte Números a Texto con Formato Monetario",
+    description: "Convierte cualquier número en su representación textual con soporte para múltiples monedas (PEN, USD, EUR). Herramienta rápida y precisa.",
+    ogTitle: "Número a Letras - Convierte Números a Texto con Formato Monetario",
+    ogDescription: "Convierte números en palabras con soporte para monedas como PEN, USD y EUR. Ideal para documentos financieros y facturación.",
+    ogImage: "https://ronal-llapapasca.vercel.app/number-to-letters-js.png",
+    ogType: "website",
+    ogUrl: "https://ronal-llapapasca.vercel.app/", // Reemplaza con tu URL
+    twitterCard: "summary_large_image",
+    twitterTitle: "Número a Letras - Convierte Números a Texto",
+    twitterDescription: "Convierte cualquier número a texto fácilmente con formato monetario incluido.",
+    twitterImage: "https://ronal-llapapasca.vercel.app/number-to-letters-js.png"
 });
+
 </script>
 
 <style>
