@@ -4128,10 +4128,10 @@ nth-check@^2.0.1:
   dependencies:
     boolbase "^1.0.0"
 
-number-to-letters-js@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/number-to-letters-js/-/number-to-letters-js-1.2.2.tgz#e75287098f3ec19e1909adee7c168edea71db269"
-  integrity sha512-OviQI6mXBHJGAjs5rOdUIl9wK+Wt9gHw0Cl5pMWRM8/whrvliy75XcTzs+I1/EDHM1G9G1rBNsFtxEYZQPV6bA==
+number-to-letters-js@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/number-to-letters-js/-/number-to-letters-js-1.2.3.tgz#65b1f3fe948dcf2093bbdc48b898de0e9955b549"
+  integrity sha512-e49GI1giO9XqiWMAo3S7e8x6jqjFiwixQz3cWQjLFiHofj0m+++MaaM/3T7U+4/w9AGIizo5iYlDusLgGo1RJQ==
 
 nuxt@^3.15.4:
   version "3.15.4"
