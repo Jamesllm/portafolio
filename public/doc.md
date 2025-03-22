@@ -40,6 +40,15 @@ Este paquete es una herramienta útil para convertir números a su representaci�
 | PEN | Sol Peruano  |
 | USD | Dolar Estadounidense  |
 | EUR | Euro  |
+| GBP | British Pound  |
+| JPY | Japanese Yen  |
+| BRL | Brazilian Real  |
+| CAD | Canadian Dollar  |
+| AUD | Australian Dollar  |
+| MXN | Mexican Peso  |
+| CHF | Swiss Franc  |
+| CNY | Chinese Yuan  |
+| INR | Indian Rupee  |
 
 ## Instalación
 
