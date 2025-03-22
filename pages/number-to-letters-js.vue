@@ -42,7 +42,7 @@
                                 Selecciona moneda
                             </label>
                             <USelect size="xl" v-model="currency" :options="currencyOptions"
-                                placeholder="Select currency" />
+                                placeholder="Selecciona moneda" />
                         </div>
 
                         <button @click="convertNumber"
@@ -89,7 +89,7 @@
 
             <!-- Footer -->
             <div class="bg-gray-50 border-t border-gray-200 p-4 text-center text-gray-500 text-sm">
-                <p> Convertidor de Números a Letras v1.2.2 by <NuxtLink to="https://github.com/Jamesllm"
+                <p> Convertidor de Números a Letras v1.2.1 by <NuxtLink to="https://github.com/Jamesllm"
                         class="text-primary underline">Jamesllm</NuxtLink>
                 </p>
                 <p class="mt-1">
@@ -124,7 +124,16 @@ const renderedMarkdown = computed(() => md.render(markdownContent.value));
 const currencyOptions = ref([
     { label: 'USD', value: 'USD', key: 'usd' },
     { label: 'PEN', value: 'PEN', key: 'pen' },
-    { label: 'EUR', value: 'EUR', key: 'eur' }
+    { label: 'EUR', value: 'EUR', key: 'eur' },
+    { label: 'GBP', value: 'GBP', key: 'gbp' },
+    { label: 'JPY', value: 'JPY', key: 'jpy' },
+    { label: 'BRL', value: 'BRL', key: 'brl' },
+    { label: 'CAD', value: 'CAD', key: 'cad' },
+    { label: 'AUD', value: 'AUD', key: 'aud' },
+    { label: 'MXN', value: 'MXN', key: 'mxm' },
+    { label: 'CHF', value: 'CHF', key: 'chf' },
+    { label: 'CNY', value: 'CNY', key: 'cny' },
+    { label: 'INR', value: 'INR', key: 'inr' },
 ]);
 
 const numberInWords = ref<string>('');
