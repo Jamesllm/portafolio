@@ -89,7 +89,7 @@
 
             <!-- Footer -->
             <div class="bg-gray-50 border-t border-gray-200 p-4 text-center text-gray-500 text-sm">
-                <p> Convertidor de Números a Letras v1.2.1 by <NuxtLink to="https://github.com/Jamesllm"
+                <p> Convertidor de Números a Letras v1.2.3 by <NuxtLink to="https://github.com/Jamesllm"
                         class="text-primary underline">Jamesllm</NuxtLink>
                 </p>
                 <p class="mt-1">
